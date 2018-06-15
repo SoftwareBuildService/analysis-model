@@ -1,6 +1,6 @@
 node {
     stage ('Checkout') {
-        git branch:'master', url: 'file:///Users/hafner/Development/git/analysis-model'
+        checkout scm
     }
 
     stage ('Build') {
